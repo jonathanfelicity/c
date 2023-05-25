@@ -29,7 +29,7 @@ int main(void){
 pointer is a variable that stores the memory address of another variable. Pointers are used to indirectly access and manipulate the data stored in memory.
 
 - pointer  are declared `*` sysmbol in a vairiable declaration
-- `&` in C/C++ refers to address of, and is us to get the address of a variable.
+- `&` in C/C++ refers to address of, and is use to get the address of a variable.
 
 ```c
 #include <stdio.h>
@@ -41,7 +41,7 @@ int main(void){
 }
 ```
 
-- `*ptr` dereference the pointer allowing use to get the value
+- `*ptr` dereference the pointer allowing us to get the value
 
 ### WHY POINTERS ARE IMPORTANT
 * **Dynamic memory allocation:** Pointers allow you to dynamically allocate memory at runtime using functions like `malloc`, `calloc`, and `realloc`. Dynamic memory allocation enables you to create data structures of arbitrary size, such as arrays and linked lists.
