@@ -29,7 +29,7 @@ int main(void){
 pointer is a variable that stores the memory address of another variable. Pointers are used to indirectly access and manipulate the data stored in memory.
 
 - pointer  are declared `*` sysmbol in a vairiable declaration
-- `&` in C/C++ refers to address of, and is use to get the address of a variable.
+- `&` in C/C++ refers to address of, and is us to get the address of a variable.
 
 ```c
 #include <stdio.h>
