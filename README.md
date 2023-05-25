@@ -74,3 +74,37 @@ int main(void){
     return 0;
 }
 ```
+
+### STRUCT IN C
+A struct is C's and C++'s notion of a composite type, a datatype that composes a fixed set of labeled fields or members. It is so called because of the struct keyword used in declaring them, which is short for structure or, more precisely, user-defined data structure.
+
+In C, a struct is a user-defined composite data type that allows you to group together multiple variables of different types into a single entity. It provides a way to create a custom data structure that can hold related data elements.
+
+
+```c
+#include <stdio.h>
+#include <string.h>
+
+struct User {
+    char email[100];
+    char password[100];
+};
+
+int main(void) {
+    struct User johndoe;
+    strncpy(johndoe.email, "johndoe@fake.com", sizeof(johndoe.email) - 1);
+    strncpy(johndoe.password, "123@", sizeof(johndoe.password) - 1);
+
+    johndoe.email[sizeof(johndoe.email) - 1] = '\0';       // Ensure null termination
+    johndoe.password[sizeof(johndoe.password) - 1] = '\0'; // Ensure null termination
+
+    printf("Email: %s\n", johndoe.email);
+    printf("Password: %s\n", johndoe.password);
+
+    return 0;
+}
+
+```
+
+
+- The `strncpy` function is used to safely copy the email and password strings into the 
