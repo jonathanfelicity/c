@@ -25,6 +25,56 @@ int main(void){
 
 
 ---
+
+## VARIABLE AND CONSTANTANS
+A variable is defined as a meaningful name given to a data storage location in the computer
+memory. When using a variable, we actually refer to the address of the memory where the data
+is stored. C language supports two basic kinds of variables.
+
+### Numeric Variables
+Numeric variables can be used to store either integer values or floating point values. Modifiers like
+`short`, `long`, `signed`, and `unsigned` can also be used with numeric variables. The difference between
+`signed` and `unsigned` numeric variables is that `signed` variables can be either negative or positive
+but `unsigned` variables can only be positive.
+
+When we omit the `signed/unsigned `modifier, C language
+automatically makes it a `signed` variable. To declare an `unsigned` variable, the `unsigned` modifier
+must be explicitly added during the declaration of the variable.
+
+### DECLARATION OF VARIABLE 
+To declare a variable, specify the data type of the variable followed by its name. The data type
+indicates the kind of values that the variable can store. Variable names should always be meaningful
+and must reflect the purpose of their usage in the program
+```C
+int emp_num;
+float salary;
+char grade;
+double balance_amount;
+unsigned short int acc_no;
+```
+In C, variables can be declared at any place in the program but two things must be kept in mind.
+First, variables should be declared before using them
+
+### Initializing Variables
+While declaring the variables, we can also initialize them with some value
+```C
+int emp_num = 7;
+float salary = 9800.99
+char grade = ‘A’;
+double balance_amount = 100000000;
+```
+
+### Constants
+Constants are identifiers whose values do not change. While values of variables can be changed at
+any time, values of constants can never be changed. Constants are used to define fixed values
+like pi or the charge on an electron so that their value does not get changed in the program even
+by mistake.
+
+```C
+const float pi = 3.14;
+```
+
+
 ## C POINTERS 
 pointer is a variable that stores the memory address of another variable. Pointers are used to indirectly access and manipulate the data stored in memory.
 
